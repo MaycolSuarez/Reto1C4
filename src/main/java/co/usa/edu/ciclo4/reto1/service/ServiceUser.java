@@ -40,7 +40,6 @@ public class ServiceUser {
             if (existeEmail(user.getEmail()) == false) {
                 return repositoryUser.save(user);
             } else {
-                System.out.println("correo ya existe");
                 return user;
             }
         } else {

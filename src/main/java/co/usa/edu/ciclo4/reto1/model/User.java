@@ -25,13 +25,20 @@ public class User implements Serializable {
     private String password;
     private String name;
 
-    
+    public User(){
 
+    }
+    
+    
+    
     public User(String email, String password, String name) {
         this.email = email;
         this.password = password;
         this.name = name;
     }
+
+
+
     public Integer getId() {
         return id;
     }
