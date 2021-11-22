@@ -34,6 +34,7 @@ public class ControllerUser {
     @GetMapping("/{email}/{password}")
     public User autenticarUsuario(@PathVariable("email") String email, @PathVariable("password") String password) {
         return serviceUser.autenticarUsuario(email, password);
+        return serviceUser.autenticarUsuario(email, password);
     }
 
     @GetMapping("/{email}")
