@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" href="css/login.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/Login.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="background-wrap">
+        <div class="background"></div>
+    </div>
+
+    <form id="accesspanel" action="login" method="post">
+        <h1 id="litheader">WILLY WONKA</h1>
+        <div class="inset">
+            <p>
+                <input type="text" name="email" id="Useremail" placeholder="E-mail">
+            </p>
+            <p>
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+            </p>
+            <div style="text-align: center;">
+                <label for="remember">No tienes una cuenta?</label>
+                <a href="registro.html" class="text-info">Crea tu cuenta aqui</a>
+            </div>
+            <input class="loginLoginValue" type="hidden" name="service" value="Index.html" />
+        </div>
+        <p class="p-container">
+            <input onclick="validar()" type="button" name="Index.html" id="go" value="Ingresar">
+        </p>
+    </form>
+</body>
+
+</html>

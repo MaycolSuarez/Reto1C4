@@ -55,6 +55,7 @@ public class ServiceUser {
         Optional<User> usuario = repositoryUser.autenticarUsuario(email, password);
 
         if (usuario.isEmpty()) {
+            //throw new Error();
             return new User(email, password, "NO DEFINIDO");
         } else {
             return usuario.get();
